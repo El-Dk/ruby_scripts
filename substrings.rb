@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 def substrings(text, dictionary)
-  words = text.downcase.split(" ")
+  words = text.downcase.split(' ')
   substring_hash = Hash.new(0)
   words.each do |word|
     dictionary.each do |elem|
@@ -9,8 +11,8 @@ def substrings(text, dictionary)
   substring_hash
 end
 
+dictionary = %w[below down go going horn how howdy it i low own part partner sit]
 
-dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
-#puts substrings("below", dictionary)
+# puts substrings(below, dictionary)
 
 puts substrings("Howdy partner, sit down! How's it going?", dictionary)
