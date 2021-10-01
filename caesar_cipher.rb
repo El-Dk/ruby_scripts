@@ -13,9 +13,3 @@ def caesar_cipher(text, shift_factor)
   end
   text
 end
-
-puts caesar_cipher('What a string!', 5)
-puts caesar_cipher('What a string!', 31)
-puts caesar_cipher('What a string!', 57)
-puts caesar_cipher('What a string!', -21)
-puts caesar_cipher('What a string!', 6)
